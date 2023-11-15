@@ -1,11 +1,11 @@
 <div>
     <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
         <div class="bg-white overflow-hidden shadow-xl sm:rounded-lg">
-            <div class="bg-gray-200 bg-opacity-25 grid grid-cols-2 md:grid-cols-2 gap-6 lg:gap-8 p-6 lg:p-8">
-                <div class="bg-white shadow rounded">
+            <div class="bg-gray-200 bg-opacity-25 grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8 p-6 lg:p-8">
+                <div class="bg-white shadow-2xl rounded">
                     <div class="px-6 py-4">
                         <p class="text-sm">
-                            <a href="https://laravel.com/docs"
+                            <a href="/"
                                 class="inline-flex items-center font-semibold text-indigo-700">
                                 Preview
 
@@ -67,7 +67,7 @@
                 </div>
 
                 <div class="">
-                    <div class="bg-white shadow rounded">
+                    <div class="bg-white shadow-2xl rounded">
                         <div class="px-4 py-3">
                             <div class="flex items-center">
                                 <i class="fa-solid fa-signature"></i>
@@ -116,7 +116,7 @@
                                         <tbody>
                                             <tr>
                                                 <td width="24px" style="vertical-align:middle;text-align:center;">
-                                                    <img src="{{ Storage::url('public/firma/phone.png') }}"
+                                                    <img src="https://filesignature.s3.amazonaws.com/phone.png"
                                                         style="padding-top:1px;vertical-align:text-top; width: 24px; height: 24px;"
                                                         alt="icono-marcador">
                                                 </td>
@@ -135,7 +135,7 @@
 
                                             <tr>
                                                 <td width="24px" style="vertical-align:middle;text-align:center">
-                                                    <img src="{{ Storage::url('public/firma/email.png') }}"
+                                                    <img src="https://filesignature.s3.amazonaws.com/email.png"
                                                         style="padding-top:1px;vertical-align:text-top; width: 24px; height: 24px;"
                                                         alt="icono-marcador">
                                                 </td>
@@ -160,7 +160,7 @@
                                             <tr>
                                                 <td style="padding:20px 0px 20px 0px"><a href="https://www.advancespc.com/"
                                                         style="text-decoration:none !important"><img width="320"
-                                                            src="{{ Storage::url('public/firma/gifAdv.gif') }}"
+                                                            src="https://filesignature.s3.amazonaws.com/gifAdv.gif"
                                                             alt="Si ve este mensaje la imagen no es valida"></a></td>
                                             </tr>
                                         </tbody>
@@ -169,7 +169,7 @@
                                         <tbody>
                                             <tr>
                                                 <td width="24px" style="vertical-align:middle;text-align:center">
-                                                    <img src="{{ Storage::url('public/firma/web.png') }}"
+                                                    <img src="https://filesignature.s3.amazonaws.com/web.png"
                                                         style="padding-top:1px;vertical-align:text-top; width: 24px; height: 24px;"
                                                         alt="icono-marcador">
                                                 </td>
@@ -183,7 +183,7 @@
                                             </tr>
                                             <tr>
                                                 <td width="24px" style="vertical-align:middle;text-align:center">
-                                                    <img src="{{ Storage::url('public/firma/mapa.png') }}"
+                                                    <img src="https://filesignature.s3.amazonaws.com/mapa.png"
                                                         style="padding-top:1px;vertical-align:text-top; width: 24px; height: 24px;"
                                                         alt="icono-marcador">
 
