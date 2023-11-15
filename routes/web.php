@@ -15,7 +15,11 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('welcome');
-});
+})->name('ventas');
+
+Route::get('/director', function () {
+    return view('director');
+})->name('director');
 
 Route::middleware([
     'auth:sanctum',
