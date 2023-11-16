@@ -7,7 +7,7 @@
                 <div class="shrink-0 flex items-center">
                     <a href="{{ route('dashboard') }}">
                         {{-- <x-application-mark class="block h-9 w-auto" /> --}}
-                        <img src="{{Storage::url('adv/logo.png')}}" class="block h-12 w-auto" alt="">
+                        <img src="https://filesignature.s3.amazonaws.com/logo.png" class="block h-12 w-auto" alt="">
                     </a>
                 </div>
 
