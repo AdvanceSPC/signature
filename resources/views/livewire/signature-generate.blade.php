@@ -6,11 +6,11 @@
                     <div class="px-6 py-4">
                         <p class="text-sm">
                             <a href="/"
-                                class="inline-flex items-center font-semibold text-indigo-700">
+                                class="inline-flex items-center font-semibold text-orange-500">
                                 Preview
 
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
-                                    class="ml-1 w-5 h-5 fill-indigo-500">
+                                    class="ml-1 w-5 h-5 fill-orange-500">
                                     <path fill-rule="evenodd"
                                         d="M5 10a.75.75 0 01.75-.75h6.638L10.23 7.29a.75.75 0 111.04-1.08l3.5 3.25a.75.75 0 010 1.08l-3.5 3.25a.75.75 0 11-1.04-1.08l2.158-1.96H5.75A.75.75 0 015 10z"
                                         clip-rule="evenodd" />
@@ -91,7 +91,7 @@
                                                 </td>
                                                 
                                                 <td style="vertical-align:top;">
-                                                    <div style="display:inline-block;">
+                                                    <div style="">
                                                         <h1 style="font-size:18px;font-weight:700 !important;font-family:'Poppins', sans-serif !important;padding:0px;margin-top:0px;width:215px;line-break:anywhere">
                                                             @if ($nombre)
                                                                 {{ $nombre }}
@@ -99,7 +99,7 @@
                                                                 Nombre y apellido
                                                             @endif
                                                         </h1>
-                                                        <p style="font-size:16px;font-weight:500 !important;font-family:Poppins, sans-serif !important;margin:0px;line-height:1;width:215px;line-break:anywhere;margin-bottom:0.67rem;white-space:pre-line;color:#FF8333  !important">
+                                                        <p style="margin-top:0.97rem;font-size:16px;font-weight:700 !important">
                                                             @if ($cargo)
                                                                 {{ $cargo }}
                                                             @else
@@ -107,30 +107,33 @@
                                                             @endif
                                                         </p>
                                                     </div>
+                                                    <hr style="border-color: orange;">
+
                                                 </td>
                                             </tr>
                                         </tbody>
                                     </table>
-                                    
                                     <table>
                                         <tbody>
                                             <tr>
-                                                <td width="24px" style="vertical-align:middle;text-align:center;">
-                                                    <img src="https://filesignature.s3.amazonaws.com/phone.png"
-                                                        style="padding-top:1px;vertical-align:text-top; width: 24px; height: 24px;"
-                                                        alt="icono-marcador">
-                                                </td>
-                                                <td
-                                                    style="text-decoration:none;color:#000000;vertical-align:middle;font-family:Poppins, sans-serif !important;font-weight:500 !important;font-size:14px;padding:0px 0px 0px 10px;margin:0px;line-height:1;width:280px">
-                                                    <span
-                                                        style="text-decoration:none;color:#000000;vertical-align:middle;font-family:Poppins, sans-serif !important;font-weight:500 !important;font-size:14px;line-height:1;width:280px">
-                                                        @if ($telefono)
-                                                            {{ $telefono }}
-                                                        @else
-                                                            {{$indice}} ­999 ­999 ­999
-                                                        @endif
-                                                    </span>
-                                                </td>
+                                                <div style="margin-top:0.97rem;">
+                                                    <td width="24px" style="vertical-align:middle;text-align:center;">
+                                                        <img src="https://filesignature.s3.amazonaws.com/celular.png"
+                                                            style="padding-top:1px;vertical-align:text-top; width: 24px; height: 24px;"
+                                                            alt="icono-marcador">
+                                                    </td>
+                                                    <td
+                                                        style="text-decoration:none;color:#000000;vertical-align:middle;font-family:Poppins, sans-serif !important;font-weight:500 !important;font-size:14px;padding:0px 0px 0px 10px;margin:0px;line-height:1;width:280px">
+                                                        <span
+                                                            style="text-decoration:none;color:#000000;vertical-align:middle;font-family:Poppins, sans-serif !important;font-weight:500 !important;font-size:14px;line-height:1;width:280px">
+                                                            @if ($telefono)
+                                                                {{ $telefono }}
+                                                            @else
+                                                                {{$indice}} ­999 ­999 ­999
+                                                            @endif
+                                                        </span>
+                                                    </td>
+                                                </div>
                                             </tr>
 
                                             <tr>
@@ -169,7 +172,7 @@
                                         <tbody>
                                             <tr>
                                                 <td width="24px" style="vertical-align:middle;text-align:center">
-                                                    <img src="https://filesignature.s3.amazonaws.com/web.png"
+                                                    <img src="https://filesignature.s3.amazonaws.com/pag_web.png"
                                                         style="padding-top:1px;vertical-align:text-top; width: 24px; height: 24px;"
                                                         alt="icono-marcador">
                                                 </td>
@@ -183,7 +186,7 @@
                                             </tr>
                                             <tr>
                                                 <td width="24px" style="vertical-align:middle;text-align:center">
-                                                    <img src="https://filesignature.s3.amazonaws.com/mapa.png"
+                                                    <img src="https://filesignature.s3.amazonaws.com/mapas.png"
                                                         style="padding-top:1px;vertical-align:text-top; width: 24px; height: 24px;"
                                                         alt="icono-marcador">
 
