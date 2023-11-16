@@ -135,7 +135,7 @@
 
                                             <tr>
                                                 <td width="24px" style="vertical-align:middle;text-align:center">
-                                                    <img src="https://filesignature.s3.amazonaws.com/email.png"
+                                                    <img src="https://filesignature.s3.amazonaws.com/correo.png"
                                                         style="padding-top:1px;vertical-align:text-top; width: 24px; height: 24px;"
                                                         alt="icono-marcador">
                                                 </td>
