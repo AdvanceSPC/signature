@@ -1,7 +1,7 @@
 <div>
     <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
         <div class="bg-white overflow-hidden shadow-xl sm:rounded-lg">
-            <div class="bg-gray-200 bg-opacity-25 grid grid-cols-2 md:grid-cols-2 gap-6 lg:gap-8 p-6 lg:p-8">
+            <div class="bg-gray-200 bg-opacity-25 grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8 p-6 lg:p-8">
                 <div class="bg-white shadow rounded">
                     <div class="px-6 py-4">
                         <p class="text-sm">
@@ -116,7 +116,7 @@
                                         <tbody>
                                             <tr>
                                                 <td width="24px" style="vertical-align:middle;text-align:center;">
-                                                    <img src="https://filesignature.s3.amazonaws.com/adv/telefono.png"
+                                                    <img src="https://filesignature.s3.amazonaws.com/celular.png"
                                                         style="padding-top:1px;vertical-align:text-top; width: 24px; height: 24px;"
                                                         alt="icono-marcador">
                                                 </td>
@@ -135,7 +135,7 @@
 
                                             <tr>
                                                 <td width="24px" style="vertical-align:middle;text-align:center">
-                                                    <img src="https://filesignature.s3.amazonaws.com/adv/email.png"
+                                                    <img src="https://filesignature.s3.amazonaws.com/correo.png"
                                                         style="padding-top:1px;vertical-align:text-top; width: 24px; height: 24px;"
                                                         alt="icono-marcador">
                                                 </td>
@@ -160,7 +160,7 @@
                                             <tr>
                                                 <td style="padding:20px 0px 20px 0px"><a href="https://www.advancespc.com/"
                                                         style="text-decoration:none !important"><img width="320"
-                                                            src="https://filesignature.s3.amazonaws.com/adv/director.gif"
+                                                            src="https://filesignature.s3.amazonaws.com/director.gif"
                                                             alt="Si ve este mensaje la imagen no es valida"></a></td>
                                             </tr>
                                         </tbody>
@@ -169,7 +169,7 @@
                                         <tbody>
                                             <tr>
                                                 <td width="24px" style="vertical-align:middle;text-align:center">
-                                                    <img src="https://filesignature.s3.amazonaws.com/adv/web.png"
+                                                    <img src="https://filesignature.s3.amazonaws.com/pag_web.png"
                                                         style="padding-top:1px;vertical-align:text-top; width: 24px; height: 24px;"
                                                         alt="icono-marcador">
                                                 </td>
@@ -183,7 +183,7 @@
                                             </tr>
                                             <tr>
                                                 <td width="24px" style="vertical-align:middle;text-align:center">
-                                                    <img src="https://filesignature.s3.amazonaws.com/adv/map.png"
+                                                    <img src="https://filesignature.s3.amazonaws.com/mapas.png"
                                                         style="padding-top:1px;vertical-align:text-top; width: 24px; height: 24px;"
                                                         alt="icono-marcador">
 
