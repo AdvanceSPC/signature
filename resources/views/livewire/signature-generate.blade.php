@@ -82,9 +82,10 @@
                                         <tbody>
                                             <tr>
                                                 <td style="vertical-align:top;">
-                                                    @if ($photo)
-                                                        <img src="{{ $photo->temporaryUrl() }}" style="width:60px;height:60px; border-radius: 50%; object-fit: cover; margin-right:10px;" alt="photo">
-                                                    @endif
+                                                @if ($photo) 
+                                                    <img id="imagen" src="{{ $photo->temporaryUrl()  }}" style="width:60px;height:60px; border-radius: 50%; object-fit: cover; margin-right:10px;" alt="photo">
+                                                @endif
+                                                   
                                                     <div wire:loading wire:target="photo">  
                                                         Removing post...
                                                     </div>
@@ -161,7 +162,7 @@
                                     <table>
                                         <tbody>
                                             <tr>
-                                                <td style="padding:20px 0px 20px 0px"><a href="https://www.advancespc.com/"
+                                                <td style="padding:10px 0px 10px 0px"><a href="https://www.advancespc.com/"
                                                         style="text-decoration:none !important"><img width="320"
                                                             src="https://filesignature.s3.amazonaws.com/gifAdv.gif"
                                                             alt="Si ve este mensaje la imagen no es valida"></a></td>
@@ -213,10 +214,15 @@
     <script>
         document.addEventListener('livewire:initialized', () => {
             @this.on('post-created', (event) => {
+
+                var imagenDestino = document.getElementById("imagen");
+                imagenDestino.src = "";
+                var nuevaRutaImagen = event;
+                imagenDestino.src = nuevaRutaImagen;
                 iziToast.success({
                     title: 'OK',
                     position: 'center',
-                    message: event,
+                    message: 'firma copiada',
                 });
                 var range = document.createRange();
                 range.selectNode(document.querySelector('.contenido'));

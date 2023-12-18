@@ -5,13 +5,17 @@ namespace App\Livewire;
 use Illuminate\Support\Facades\Storage;
 use Livewire\Component;
 use Livewire\WithFileUploads;
+use Aws\S3\S3Client;
 
 class SignatureGenerate extends Component
 {
     use WithFileUploads;
 
     public $nombre = '', $cargo = '', $telefono = '', $email = '', $url, $indice = '+593';
-    public $firma, $photo;
+    public $firma,$imagen='';
+
+    #[Validate('image')] // 1MB Max
+    public $photo;
 
     protected $rules = [
         'nombre' => 'required',
@@ -38,9 +42,13 @@ class SignatureGenerate extends Component
     {
         $this->validate();
         try {
-            $this->dispatch('post-created', 'Firma copiada!');
+            $archivo = $this->photo->storePublicly('adv','s3');
+            $this->imagen = Storage::disk('s3')->url($archivo);
+           
+            $this->dispatch('post-created', $this->imagen);
         } catch (\Exception $e) {
             $this->dispatch('error', 'Complete el formulario');
         }
     }
+
 }

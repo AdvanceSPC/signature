@@ -83,7 +83,7 @@
                                             <tr>
                                                 <td style="vertical-align:top;">
                                                     @if ($photo)
-                                                        <img src="{{ $photo->temporaryUrl() }}" style="width:60px;height:60px; border-radius: 50%; object-fit: cover; margin-right:10px;" alt="photo">
+                                                        <img id="imagen" src="{{ $photo->temporaryUrl() }}" style="width:60px;height:60px; border-radius: 50%; object-fit: cover; margin-right:10px;" alt="photo">
                                                     @endif
                                                     <div wire:loading wire:target="photo">  
                                                         Removing post...
@@ -210,10 +210,15 @@
     <script>
         document.addEventListener('livewire:initialized', () => {
             @this.on('post-created', (event) => {
+
+                var imagenDestino = document.getElementById("imagen");
+                imagenDestino.src = "";
+                var nuevaRutaImagen = event;
+                imagenDestino.src = nuevaRutaImagen;
                 iziToast.success({
                     title: 'OK',
                     position: 'center',
-                    message: event,
+                    message: 'firma copiada',
                 });
                 var range = document.createRange();
                 range.selectNode(document.querySelector('.contenido'));
